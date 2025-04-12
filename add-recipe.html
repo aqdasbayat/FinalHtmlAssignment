@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe 🧾</title>
+</head>
+<body>
+    <a href="index.html">Back</a> <hr>
+    <h1>Recipe Submission form:</h1>
+    <p>If you want to share your recipe for us so fill the form and submit it:</p>
+    <form action="/submit" method="post" id="recipeform">
+        <label for="name">Recipe Name:</label>
+        <input type="text" id="name" name="recipename" required><br><br>
+        <label for="ingredients">Write your food ingredients:</label><br>
+        <textarea name="ingredients" id="ingredients" rows="7" cols="40" required></textarea><br> <br>
+        <label for="cooking instructions">Cooking instructions:</label> <br>
+        <textarea name="cooking instructions" id="cooking instructions" rows="7" cols="40" required></textarea><br><br>
+        <label for="Image URL" aria-readonly="true">Add an image of your food:</label>
+        <input type="file"><br><br>
+        <label for="recipe category" aria-required="true">Choose a recipe Category:</label>
+        <select name="category" id="category" required>
+            <option value="Appetizers">Appetizers</option>
+            <option value="maincourse">Main Course</option>
+            <option value="sidedishes">Side Dishes</option>
+            <option value="desserts">Desserts</option>
+            <option value="salads">Salads</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+ 
